@@ -1,0 +1,11 @@
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\bin\Debug\Home_Assigment_Ca242.exe.config
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\bin\Debug\Home_Assigment_Ca242.exe
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\bin\Debug\Home_Assigment_Ca242.pdb
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\obj\Debug\Home_Assigment_Ca242.csproj.AssemblyReference.cache
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\obj\Debug\Home_Assigment_Ca242.Form1.resources
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\obj\Debug\Home_Assigment_Ca242.Properties.Resources.resources
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\obj\Debug\Home_Assigment_Ca242.csproj.GenerateResource.cache
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\obj\Debug\Home_Assigment_Ca242.csproj.CoreCompileInputs.cache
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\obj\Debug\Home_Assigment_Ca242.exe
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\obj\Debug\Home_Assigment_Ca242.pdb
+D:\Semester5\C#programming\Home_Assigment_Ca242\Home_Assigment_Ca242\obj\Debug\Home_Assigment_Ca242.exe.config
