@@ -27,17 +27,17 @@ namespace Test_Score_Average
                 double Score3;
 
                 //check the first score
-                if(!double.TryParse(txtTestScore1.Text,out Score1))
+                if(double.TryParse(txtTestScore1.Text,out Score1))
                 {
                     MessageBox.Show("please enter a valid Score 1.");
                 }
                 //check the second score
-                else if(!double.TryParse(txtTestScore2.Text, out Score2))
+                else if(double.TryParse(txtTestScore2.Text, out Score2))
                 {
                     MessageBox.Show("please enter a valid Score 2.");
                 }
                 //check the third score
-                else if (!double.TryParse(txtTestScore3.Text, out Score3))
+                else if (double.TryParse(txtTestScore3.Text, out Score3))
                 {
                     MessageBox.Show("please enter a valid Score 3.");
                 }

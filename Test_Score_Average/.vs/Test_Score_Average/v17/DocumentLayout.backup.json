@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Semester5\\C#programming\\Test_Score_Average\\",
+  "WorkspaceRootPath": "D:\\SEMESTER 4\\DATABASE\\C#_practice\\C#_one_practice\\Test_Score_Average\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE86C59A-C57C-43ED-85C4-46FE0725A8CA}|Test_Score_Average\\Test_Score_Average.csproj|d:\\semester5\\c#programming\\test_score_average\\test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EE86C59A-C57C-43ED-85C4-46FE0725A8CA}|Test_Score_Average\\Test_Score_Average.csproj|D:\\SEMESTER 4\\DATABASE\\C#_practice\\C#_one_practice\\Test_Score_Average\\test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE86C59A-C57C-43ED-85C4-46FE0725A8CA}|Test_Score_Average\\Test_Score_Average.csproj|solutionrelative:test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE86C59A-C57C-43ED-85C4-46FE0725A8CA}|Test_Score_Average\\Test_Score_Average.csproj|d:\\semester5\\c#programming\\test_score_average\\test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EE86C59A-C57C-43ED-85C4-46FE0725A8CA}|Test_Score_Average\\Test_Score_Average.csproj|d:\\semester 4\\database\\c#_practice\\c#_one_practice\\test_score_average\\test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EE86C59A-C57C-43ED-85C4-46FE0725A8CA}|Test_Score_Average\\Test_Score_Average.csproj|solutionrelative:test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Semester5\\C#programming\\Test_Score_Average\\Test_Score_Average\\Form1.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\DATABASE\\C#_practice\\C#_one_practice\\Test_Score_Average\\Test_Score_Average\\Form1.cs",
               "RelativeDocumentMoniker": "Test_Score_Average\\Form1.cs",
-              "ToolTip": "D:\\Semester5\\C#programming\\Test_Score_Average\\Test_Score_Average\\Form1.cs*",
+              "ToolTip": "D:\\SEMESTER 4\\DATABASE\\C#_practice\\C#_one_practice\\Test_Score_Average\\Test_Score_Average\\Form1.cs*",
               "RelativeToolTip": "Test_Score_Average\\Form1.cs*",
-              "ViewState": "AgIAADoAAAAAAAAAAAAnwEgAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwC4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-04T04:51:12.422Z",
               "EditorCaption": ""
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Semester5\\C#programming\\Test_Score_Average\\Test_Score_Average\\Form1.cs",
+              "DocumentMoniker": "D:\\SEMESTER 4\\DATABASE\\C#_practice\\C#_one_practice\\Test_Score_Average\\Test_Score_Average\\Form1.cs",
               "RelativeDocumentMoniker": "Test_Score_Average\\Form1.cs",
-              "ToolTip": "D:\\Semester5\\C#programming\\Test_Score_Average\\Test_Score_Average\\Form1.cs [Design]*",
+              "ToolTip": "D:\\SEMESTER 4\\DATABASE\\C#_practice\\C#_one_practice\\Test_Score_Average\\Test_Score_Average\\Form1.cs [Design]*",
               "RelativeToolTip": "Test_Score_Average\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-04T04:33:59.025Z",

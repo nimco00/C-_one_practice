@@ -8,3 +8,14 @@ D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_
 D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.csproj.CoreCompileInputs.cache
 D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.exe
 D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.pdb
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\bin\Debug\Test_Score_Average.exe.config
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\bin\Debug\Test_Score_Average.exe
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\bin\Debug\Test_Score_Average.pdb
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.csproj.AssemblyReference.cache
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.exe.config
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.Form1.resources
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.Properties.Resources.resources
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.csproj.GenerateResource.cache
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.csproj.CoreCompileInputs.cache
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.exe
+D:\SEMESTER 4\DATABASE\C#_practice\C#_one_practice\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.pdb
