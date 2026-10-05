@@ -1,0 +1,10 @@
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\bin\Debug\Test_Score_Average.exe.config
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\bin\Debug\Test_Score_Average.exe
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\bin\Debug\Test_Score_Average.pdb
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.csproj.AssemblyReference.cache
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.Form1.resources
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.Properties.Resources.resources
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.csproj.GenerateResource.cache
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.csproj.CoreCompileInputs.cache
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.exe
+D:\Semester5\C#programming\Test_Score_Average\Test_Score_Average\obj\Debug\Test_Score_Average.pdb
