@@ -1,0 +1,11 @@
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\bin\Debug\Course_Registration_forms.exe.config
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\bin\Debug\Course_Registration_forms.exe
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\bin\Debug\Course_Registration_forms.pdb
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\obj\Debug\Course_Registration_forms.csproj.AssemblyReference.cache
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\obj\Debug\Course_Registration_forms.Form1.resources
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\obj\Debug\Course_Registration_forms.Properties.Resources.resources
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\obj\Debug\Course_Registration_forms.csproj.GenerateResource.cache
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\obj\Debug\Course_Registration_forms.csproj.CoreCompileInputs.cache
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\obj\Debug\Course_Registration_forms.exe
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\obj\Debug\Course_Registration_forms.pdb
+D:\Semester5\C#programming\Course_Registration_forms\Course_Registration_forms\obj\Debug\Course_Registration_forms.exe.config
