@@ -1,0 +1,11 @@
+D:\Semester5\C#programming\Software sles\Software sles\bin\Debug\Software sles.exe.config
+D:\Semester5\C#programming\Software sles\Software sles\bin\Debug\Software sles.exe
+D:\Semester5\C#programming\Software sles\Software sles\bin\Debug\Software sles.pdb
+D:\Semester5\C#programming\Software sles\Software sles\obj\Debug\Software sles.csproj.AssemblyReference.cache
+D:\Semester5\C#programming\Software sles\Software sles\obj\Debug\Software_sles.Form1.resources
+D:\Semester5\C#programming\Software sles\Software sles\obj\Debug\Software_sles.Properties.Resources.resources
+D:\Semester5\C#programming\Software sles\Software sles\obj\Debug\Software sles.csproj.GenerateResource.cache
+D:\Semester5\C#programming\Software sles\Software sles\obj\Debug\Software sles.csproj.CoreCompileInputs.cache
+D:\Semester5\C#programming\Software sles\Software sles\obj\Debug\Software sles.exe
+D:\Semester5\C#programming\Software sles\Software sles\obj\Debug\Software sles.pdb
+D:\Semester5\C#programming\Software sles\Software sles\obj\Debug\Software sles.exe.config
