@@ -48,7 +48,7 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtBookingDetails = new System.Windows.Forms.TextBox();
+            this.Booking_details = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -267,15 +267,14 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // txtBookingDetails
+            // Booking_details
             // 
-            this.txtBookingDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBookingDetails.Location = new System.Drawing.Point(722, 83);
-            this.txtBookingDetails.Multiline = true;
-            this.txtBookingDetails.Name = "txtBookingDetails";
-            this.txtBookingDetails.Size = new System.Drawing.Size(460, 510);
-            this.txtBookingDetails.TabIndex = 5;
-            this.txtBookingDetails.Text = "Booking Details";
+            this.Booking_details.FormattingEnabled = true;
+            this.Booking_details.ItemHeight = 20;
+            this.Booking_details.Location = new System.Drawing.Point(714, 68);
+            this.Booking_details.Name = "Booking_details";
+            this.Booking_details.Size = new System.Drawing.Size(443, 504);
+            this.Booking_details.TabIndex = 5;
             // 
             // Form1
             // 
@@ -283,7 +282,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1218, 621);
-            this.Controls.Add(this.txtBookingDetails);
+            this.Controls.Add(this.Booking_details);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
@@ -326,7 +325,7 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.TextBox txtBookingDetails;
+        private System.Windows.Forms.ListBox Booking_details;
     }
 }
 

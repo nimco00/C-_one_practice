@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Hotel_room_boking_system
 {
@@ -19,228 +20,236 @@ namespace Hotel_room_boking_system
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            //  CREATE VARIABLES
-            string guestName;
-            string roomType = "";
+            // creating variables
+            string name;
             int age;
-            int nights;
-            int guests;
-            int capacity;
+            int number_nights;
+            int number_guests;
 
-            double roomRate;
-            double roomCost;
-            double breakfastCost;
-            double subtotal;
-            double discountRate;
+            // options and checkbox
+            string Room_type = "";
+            String BreakFast = "";
+
+            int rate_per_night = 0;
             double discount;
-            double seniorDiscount;
-            double serviceCharge;
-            double total;
+            double BreakFast_Amount;
+            double subcharge = 0;
+            double senior_discount;
 
-            bool bookingApproved = true;
-            bool breakfastSelected;
-            bool ageValid;
-            bool nightsValid;
-            bool guestsValid;
 
-            // ASSIGN VALUES
-            guestName = txtName.Text.Trim();
 
-            ageValid = int.TryParse(txtAge.Text, out age);
-            nightsValid = int.TryParse(txtNight.Text, out nights);
-            guestsValid = int.TryParse(txtGuests.Text, out guests);
-
-            breakfastSelected = cbbreakfast.Checked;
-
-            //  VALIDATE GUEST NAME
-            if (guestName == "")
+            if (int.TryParse(txtAge.Text, out age) &&
+            int.TryParse(txtNight.Text, out number_nights) &&
+            int.TryParse(txtGuests.Text, out number_guests))
             {
-                MessageBox.Show("Enter Guest Name.");
-                bookingApproved = false;
-            }
+                // assignment
+                name = txtName.Text;
+                age = int.Parse(txtAge.Text);
+                number_nights = int.Parse(txtNight.Text);
+                number_guests = int.Parse(txtGuests.Text);
 
-            //  VALIDATE AGE
-            if (bookingApproved && ageValid)
-            {
-                MessageBox.Show("Enter a valid age.");
-                bookingApproved = false;
-            }
 
-            //  VALIDATE NUMBER OF NIGHTS
-            if (bookingApproved && nightsValid)
-            {
-                MessageBox.Show("Enter valid Number of Nights.");
-                bookingApproved = false;
-            }
-
-            //  VALIDATE NUMBER OF GUESTS
-            if (bookingApproved && guestsValid)
-            {
-                MessageBox.Show("Enter valid Number of Guests.");
-                bookingApproved = false;
-            }
-
-            //  CHECK AGE RANGE
-            if (bookingApproved && (age < 18 || age > 90))
-            {
-                MessageBox.Show("Age must be between 18 - 90");
-                bookingApproved = false;
-            }
-
-            //  CHECK NIGHTS RANGE
-            if (bookingApproved && (nights < 1 || nights > 30))
-            {
-                MessageBox.Show("Nights must be between 1 - 30");
-                bookingApproved = false;
-            }
-
-            //  CHECK GUESTS RANGE
-            if (bookingApproved && (guests < 1 || guests > 6))
-            {
-                MessageBox.Show("Guests must be between 1 - 6");
-                bookingApproved = false;
-            }
-
-            //  SELECT ROOM TYPE
-            if (bookingApproved)
-            {
+                // room rate
                 if (rdstandard.Checked)
-                    roomType = "Standard";
+                {
+                    Room_type = "Standard";
+                    rate_per_night = 50;
+                }
                 else if (rdNormal.Checked)
-                    roomType = "Normal";
+                {
+                    Room_type = "Normal";
+                    rate_per_night = 80;
+                }
                 else if (rdhight.Checked)
-                    roomType = "Hight";
+                {
+                    Room_type = "Hight";
+                    rate_per_night = 130;
+                }
+
+                // calculate
+                double sum = number_nights * rate_per_night;
+
+
+                // discounts
+                if (number_nights >= 5 && number_nights <= 9)
+                {
+                    discount = sum * 0.05;
+                }
+                else if (number_nights >= 10)
+                {
+                    discount = sum * 0.12;
+                }
                 else
                 {
-                    MessageBox.Show("Select a Room Type.");
-                    bookingApproved = false;
+                    discount = 0;
                 }
+
+
+                // BreakFast selected add 10 per guest per night
+                if (cbbreakfast.Checked)
+                {
+                    BreakFast = "Yes";
+                    BreakFast_Amount = (number_guests * 10) * number_nights;
+                }
+                else
+                {
+                    BreakFast = "No";
+                    BreakFast_Amount = 0;
+                }
+
+
+
+                // More than 4 guests ass a 5% service subcharge
+                if (number_guests > 4)
+                {
+                    subcharge = sum * 0.05;
+                }
+                else
+                {
+                    subcharge = 0;
+                }
+
+
+                // guest age above 60 recieve an additional 5% senior discount
+                if (age >= 60)
+                {
+                    senior_discount = sum * 0.05;
+                }
+                else
+                {
+                    senior_discount = 0;
+                }
+
+                // calculate total
+                double total = (sum + subcharge + BreakFast_Amount) - discount - senior_discount;
+
+
+
+                // Guest Name Cannot be empty
+                if (name == "")
+                {
+                    MessageBox.Show("Guest Name Cannot be empty");
+                }
+                else
+                {
+                    // Age must be between 18 - 90
+                    if (age >= 18 && age <= 90)
+                    {
+                        // number of nights must be between 1 - 30
+                        if (number_nights >= 1 && number_nights <= 30)
+                        {
+                            // number of guests must be between 1 - 6
+                            if (number_guests >= 1 && number_guests <= 6)
+                            {
+                                // booking ststus
+                                string booking_status = "";
+
+                                // number of guest and selected room type
+                                if (rdhight.Checked && number_guests > 6)
+                                {
+                                    booking_status = "rejected";
+                                    MessageBox.Show("The room type you choised is Hight so number of guest must be lessthan 6 guests.");
+
+                                    // Guest display
+                                    Booking_details.Items.Add("Guest Information : ");
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Guest Name : " + name);
+                                    Booking_details.Items.Add("Guest Age : " + age);
+                                    Booking_details.Items.Add("Number Of Nights : " + number_nights);
+                                    Booking_details.Items.Add("Number Of Guest : " + number_guests);
+                                    Booking_details.Items.Add("Room Type selected : " + Room_type);
+                                    Booking_details.Items.Add("BreakFast selected : " + BreakFast);
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Booking decision : " + booking_status);
+                                }
+                                else if (rdNormal.Checked && number_guests > 4)
+                                {
+                                    booking_status = "rejected";
+                                    MessageBox.Show("The room type you choised is Normal so number of guest must be lessthan 4 guests.");
+
+                                    // Guest display
+                                    Booking_details.Items.Add("Guest Information : ");
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Guest Name : " + name);
+                                    Booking_details.Items.Add("Guest Age : " + age);
+                                    Booking_details.Items.Add("Number Of Nights : " + number_nights);
+                                    Booking_details.Items.Add("Number Of Guest : " + number_guests);
+                                    Booking_details.Items.Add("Room Type selected : " + Room_type);
+                                    Booking_details.Items.Add("BreakFast selected : " + BreakFast);
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Booking decision : " + booking_status);
+                                }
+                                else if (rdstandard.Checked && number_guests > 2)
+                                {
+                                    booking_status = "rejected";
+                                    MessageBox.Show("The room type you choised is Standard so number of guest must be lessthan 2 guests.");
+
+                                    // Guest display
+                                    Booking_details.Items.Add("Guest Information : ");
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Guest Name : " + name);
+                                    Booking_details.Items.Add("Guest Age : " + age);
+                                    Booking_details.Items.Add("Number Of Nights : " + number_nights);
+                                    Booking_details.Items.Add("Number Of Guest : " + number_guests);
+                                    Booking_details.Items.Add("Room Type selected : " + Room_type);
+                                    Booking_details.Items.Add("BreakFast selected : " + BreakFast);
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Booking decision : " + booking_status);
+                                }
+                                else
+                                {
+                                    booking_status = "Approved";
+
+                                    // Guest display
+                                    Booking_details.Items.Add("Guest Information : ");
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Guest Name : " + name);
+                                    Booking_details.Items.Add("Guest Age : " + age);
+                                    Booking_details.Items.Add("Number Of Nights : " + number_nights);
+                                    Booking_details.Items.Add("Number Of Guest : " + number_guests);
+                                    Booking_details.Items.Add("Room Type selected : " + Room_type);
+                                    Booking_details.Items.Add("BreakFast selected : " + BreakFast);
+
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Booking Amount : " + sum);
+                                    Booking_details.Items.Add("Discount : " + discount);
+                                    Booking_details.Items.Add("Senior Discount : " + senior_discount);
+                                    Booking_details.Items.Add("Subcharge Amount : " + subcharge);
+                                    Booking_details.Items.Add("BreakFast Amount : " + BreakFast_Amount);
+                                    Booking_details.Items.Add("Total Amount : " + total);
+
+                                    Booking_details.Items.Add("");
+                                    Booking_details.Items.Add("Booking decision : " + booking_status);
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("number of Guests must be between 1 - 6");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("number of nights must be between 1 - 30");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Age must be between 18 - 90");
+                    }
+                }
+
             }
-
-            // REJECT INVALID BOOKING
-            if (bookingApproved)
-            {
-                txtBookingDetails.Text = "Booking Rejected";
-                return;
-            }
-
-            //ASSIGN ROOM RATE AND CAPACITY
-            switch (roomType)
-            {
-                case "Standard":
-                    roomRate = 50;
-                    capacity = 2;
-                    break;
-
-                case "Normal":
-                    roomRate = 80;
-                    capacity = 4;
-                    break;
-
-                case "Hight":
-                    roomRate = 130;
-                    capacity = 6;
-                    break;
-
-                default:
-                    MessageBox.Show("Select a valid Room Type.");
-                    txtBookingDetails.Text = "Booking Rejected";
-                    return;
-            }
-
-            //  CHECK ROOM CAPACITY
-            if (guests > capacity)
-            {
-                MessageBox.Show("Too many guests for this room.");
-                txtBookingDetails.Text = "Booking Rejected";
-                return;
-            }
-
-            //  CALCULATE ROOM COST
-            roomCost = roomRate * nights;
-
-            //  CALCULATE BREAKFAST COST
-            if (breakfastSelected)
-            {
-                breakfastCost = 10 * guests * nights;
-            }
-            else
-            {
-                breakfastCost = roomCost - roomCost;
-            }
-
-            // CALCULATE SUBTOTAL
-            subtotal = roomCost + breakfastCost;
-
-            //  DETERMINE DISCOUNT RATE
-            if (nights >= 10)
-                discountRate = 0.12;
-            else if (nights >= 5)
-                discountRate = 0.05;
-            else
-                discountRate = subtotal - subtotal;
-
-            //  CALCULATE NIGHT DISCOUNT
-            discount = subtotal * discountRate;
-
-            // : CALCULATE SENIOR DISCOUNT
-            if (age >= 60)
-            {
-                seniorDiscount = (subtotal - discount) * 0.05;
-            }
-            else
-            {
-                seniorDiscount = subtotal - subtotal;
-            }
-
-            //  CALCULATE SERVICE CHARGE
-            if (guests > 4)
-            {
-                serviceCharge =
-                    (subtotal - discount - seniorDiscount) * 0.05;
-            }
-            else
-            {
-                serviceCharge = subtotal - subtotal;
-            }
-
-            // CALCULATE FINAL TOTAL
-            total = subtotal - discount
-                    - seniorDiscount + serviceCharge;
-
-            //  DISPLAY BOOKING DETAILS
-            txtBookingDetails.Text =
-                "BOOKING APPROVED\n\n" +
-                "Guest Name: " + guestName + "\n" +
-                "Age: " + age + "\n" +
-                "Room Type: " + roomType + "\n" +
-                "Nights: " + nights + "\n" +
-                "Guests: " + guests + "\n\n" +
-                "Room Cost: $" + roomCost.ToString("F2") + "\n" +
-                "Breakfast Cost: $" + breakfastCost.ToString("F2") + "\n" +
-                "Subtotal: $" + subtotal.ToString("F2") + "\n" +
-                "Discount: $" + discount.ToString("F2") + "\n" +
-                "Senior Discount: $" + seniorDiscount.ToString("F2") + "\n" +
-                "Service Charge: $" + serviceCharge.ToString("F2") + "\n" +
-                "TOTAL: $" + total.ToString("F2");
         }
 
 
-    
+
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             //clear
-            txtName.Clear();
-            txtAge.Clear();
-            txtNight.Clear();
-            txtGuests.Clear();
-            txtBookingDetails.Clear();
-
-            rdstandard.Checked = false;
-            rdNormal.Checked = false;
-            rdhight.Checked = false;
-            cbbreakfast.Checked = false;
+            Booking_details.Items.Clear();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
