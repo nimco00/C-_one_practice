@@ -1,0 +1,11 @@
+D:\Semester5\C#programming\Foodcharge\Foodcharge\bin\Debug\Foodcharge.exe.config
+D:\Semester5\C#programming\Foodcharge\Foodcharge\bin\Debug\Foodcharge.exe
+D:\Semester5\C#programming\Foodcharge\Foodcharge\bin\Debug\Foodcharge.pdb
+D:\Semester5\C#programming\Foodcharge\Foodcharge\obj\Debug\Foodcharge.csproj.AssemblyReference.cache
+D:\Semester5\C#programming\Foodcharge\Foodcharge\obj\Debug\Foodcharge.Form1.resources
+D:\Semester5\C#programming\Foodcharge\Foodcharge\obj\Debug\Foodcharge.Properties.Resources.resources
+D:\Semester5\C#programming\Foodcharge\Foodcharge\obj\Debug\Foodcharge.csproj.GenerateResource.cache
+D:\Semester5\C#programming\Foodcharge\Foodcharge\obj\Debug\Foodcharge.csproj.CoreCompileInputs.cache
+D:\Semester5\C#programming\Foodcharge\Foodcharge\obj\Debug\Foodcharge.exe
+D:\Semester5\C#programming\Foodcharge\Foodcharge\obj\Debug\Foodcharge.pdb
+D:\Semester5\C#programming\Foodcharge\Foodcharge\obj\Debug\Foodcharge.exe.config
