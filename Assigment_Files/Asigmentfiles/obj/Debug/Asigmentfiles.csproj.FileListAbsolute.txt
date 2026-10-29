@@ -1,0 +1,11 @@
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\bin\Debug\Asigmentfiles.exe.config
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\bin\Debug\Asigmentfiles.exe
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\bin\Debug\Asigmentfiles.pdb
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\obj\Debug\Asigmentfiles.csproj.AssemblyReference.cache
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\obj\Debug\Asigmentfiles.Form1.resources
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\obj\Debug\Asigmentfiles.Properties.Resources.resources
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\obj\Debug\Asigmentfiles.csproj.GenerateResource.cache
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\obj\Debug\Asigmentfiles.csproj.CoreCompileInputs.cache
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\obj\Debug\Asigmentfiles.exe
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\obj\Debug\Asigmentfiles.pdb
+D:\Semester5\C#programming\Asigmentfiles\Asigmentfiles\obj\Debug\Asigmentfiles.exe.config
