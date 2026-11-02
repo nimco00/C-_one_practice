@@ -1,0 +1,11 @@
+D:\Semester5\C#programming\Week_practices\Week_practices\bin\Debug\Week_practices.exe.config
+D:\Semester5\C#programming\Week_practices\Week_practices\bin\Debug\Week_practices.exe
+D:\Semester5\C#programming\Week_practices\Week_practices\bin\Debug\Week_practices.pdb
+D:\Semester5\C#programming\Week_practices\Week_practices\obj\Debug\Week_practices.csproj.AssemblyReference.cache
+D:\Semester5\C#programming\Week_practices\Week_practices\obj\Debug\Week_practices.Form1.resources
+D:\Semester5\C#programming\Week_practices\Week_practices\obj\Debug\Week_practices.Properties.Resources.resources
+D:\Semester5\C#programming\Week_practices\Week_practices\obj\Debug\Week_practices.csproj.GenerateResource.cache
+D:\Semester5\C#programming\Week_practices\Week_practices\obj\Debug\Week_practices.csproj.CoreCompileInputs.cache
+D:\Semester5\C#programming\Week_practices\Week_practices\obj\Debug\Week_practices.exe
+D:\Semester5\C#programming\Week_practices\Week_practices\obj\Debug\Week_practices.pdb
+D:\Semester5\C#programming\Week_practices\Week_practices\obj\Debug\Week_practices.exe.config
