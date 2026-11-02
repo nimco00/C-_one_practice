@@ -1,0 +1,11 @@
+D:\Semester5\C#programming\BMI weight\BMI weight\bin\Debug\BMI weight.exe.config
+D:\Semester5\C#programming\BMI weight\BMI weight\bin\Debug\BMI weight.exe
+D:\Semester5\C#programming\BMI weight\BMI weight\bin\Debug\BMI weight.pdb
+D:\Semester5\C#programming\BMI weight\BMI weight\obj\Debug\BMI weight.csproj.AssemblyReference.cache
+D:\Semester5\C#programming\BMI weight\BMI weight\obj\Debug\BMI_weight.Form1.resources
+D:\Semester5\C#programming\BMI weight\BMI weight\obj\Debug\BMI_weight.Properties.Resources.resources
+D:\Semester5\C#programming\BMI weight\BMI weight\obj\Debug\BMI weight.csproj.GenerateResource.cache
+D:\Semester5\C#programming\BMI weight\BMI weight\obj\Debug\BMI weight.csproj.CoreCompileInputs.cache
+D:\Semester5\C#programming\BMI weight\BMI weight\obj\Debug\BMI weight.exe
+D:\Semester5\C#programming\BMI weight\BMI weight\obj\Debug\BMI weight.pdb
+D:\Semester5\C#programming\BMI weight\BMI weight\obj\Debug\BMI weight.exe.config
